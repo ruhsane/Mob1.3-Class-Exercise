@@ -1,0 +1,51 @@
+
+{
+    "Festival": [{
+        "date": "09/24/1998",
+        "name": "Ruhsane Born",
+        "city": {
+            "name": "urumqi",
+            "id": "1998"
+        },
+
+        "lineup": [{
+            "name": "one person",
+            "id": "idk"
+        },{
+            "name": "another person",
+            "id": "i really dk"
+        }],
+
+        "type": {
+            "music": "Sunflower",
+            "food": "polo",
+            "cinema": "huge cinema"
+        }
+        }]
+}
+
+
+
+struct Participant{
+    let name: String
+    let id: String
+}
+
+struct City{
+    let name: String
+    let id: String
+}
+
+enum FestivalType{
+    case music
+    case food
+    case cinema
+}
+
+struct Festival{
+    let date: Date
+    let name: String
+    let city: City
+    let lineup: [Participant]
+    let type: FestivalType
+}
